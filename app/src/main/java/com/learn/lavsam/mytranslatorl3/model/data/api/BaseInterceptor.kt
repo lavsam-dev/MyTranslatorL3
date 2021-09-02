@@ -1,4 +1,4 @@
-package com.learn.lavsam.mytranslatorl3.model.datasource
+package com.learn.lavsam.mytranslatorl3.model.data.api
 
 import okhttp3.Interceptor
 import okhttp3.Response

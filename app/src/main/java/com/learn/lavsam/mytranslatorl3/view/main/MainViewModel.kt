@@ -3,7 +3,6 @@ package com.learn.lavsam.mytranslatorl3.view.main
 import androidx.lifecycle.LiveData
 import com.learn.lavsam.mytranslatorl3.model.data.AppState
 import com.learn.lavsam.mytranslatorl3.model.datasource.DataSourceLocal
-import com.learn.lavsam.mytranslatorl3.model.datasource.DataSourceRemote
 import com.learn.lavsam.mytranslatorl3.model.repository.RepositoryImplementation
 import com.learn.lavsam.mytranslatorl3.viewmodel.BaseViewModel
 import io.reactivex.observers.DisposableObserver
