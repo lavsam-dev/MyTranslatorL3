@@ -9,9 +9,7 @@ import com.learn.lavsam.mytranslatorl3.model.data.DataModel
 import com.learn.lavsam.mytranslatorl3.utils.convertMeaningsToString
 import kotlinx.android.synthetic.main.activity_main_recyclerview_item.view.*
 
-class MainAdapter(
-    private var onListItemClickListener: OnListItemClickListener
-) :
+class MainAdapter(private var onListItemClickListener: OnListItemClickListener) :
     RecyclerView.Adapter<MainAdapter.RecyclerItemViewHolder>() {
 
     private var data: List<DataModel> = arrayListOf()
@@ -29,7 +27,7 @@ class MainAdapter(
     }
 
     override fun onBindViewHolder(holder: RecyclerItemViewHolder, position: Int) {
-        holder.bind(data.get(position))
+        holder.bind(data[position])
     }
 
     override fun getItemCount(): Int {
@@ -43,7 +41,6 @@ class MainAdapter(
                 itemView.header_textview_recycler_item.text = data.text
                 itemView.description_textview_recycler_item.text =
                     convertMeaningsToString(data.meanings!!)
-
                 itemView.setOnClickListener { openInNewWindow(data) }
             }
         }

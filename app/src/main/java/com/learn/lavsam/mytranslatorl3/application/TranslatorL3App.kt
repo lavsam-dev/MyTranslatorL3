@@ -5,7 +5,7 @@ import com.learn.lavsam.mytranslatorl3.di.application
 import com.learn.lavsam.mytranslatorl3.di.mainScreen
 import org.koin.core.context.startKoin
 
-class TranslatorApp : Application() {
+class TranslatorL3App : Application() {
 
     override fun onCreate() {
         super.onCreate()
