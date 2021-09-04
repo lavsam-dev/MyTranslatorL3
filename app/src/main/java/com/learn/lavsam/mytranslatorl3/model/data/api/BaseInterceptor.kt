@@ -1,4 +1,4 @@
-package com.learn.lavsam.mytranslatorl3.model.datasource
+package com.learn.lavsam.mytranslatorl3.model.data.api
 
 import okhttp3.Interceptor
 import okhttp3.Response
@@ -15,7 +15,7 @@ class BaseInterceptor private constructor() : Interceptor {
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val response = chain.proceed(chain.request())
-        responseCode = response.code()
+        responseCode = response.code
         return response
     }
 
